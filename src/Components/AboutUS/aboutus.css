@@ -1,0 +1,145 @@
+.aboutus_page  {
+    position: relative;
+    padding: 4rem 0;
+    height: 100vh;
+}
+
+.flex-center_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUS-context_about{
+    width: 100%;
+    z-index: 2;
+}
+.aboutUS-overLay {
+    position: absolute;
+    inset: 0;
+}
+
+.aboutUS-overLay img{
+    width: 395px;
+    height: 415px;
+    z-index: 0;
+}
+
+
+.app__aboutus-content_knife
+{
+    margin: 0rem 4rem;
+    z-index: 1;
+}
+.app__aboutus-content_knife img
+{
+    height: 630px;
+}
+.aboutUS-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.about__btn {
+    margin-top: 10px;
+}
+/* about context */
+.aboutUS-context_about{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right;
+    z-index: 2;
+}
+/* /* about context */ 
+
+/* About history */
+.aboutUs_context__history {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: left;
+    z-index: 1;
+}
+/* /* About history */ 
+
+
+@media screen and (max-width: 1150px) {
+    .app__aboutus-content_knife
+{
+    margin: 0rem 2rem;
+}
+    .app__aboutus-content_knife img
+{
+    height: 550px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUS-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app__aboutus-content_knife
+    {
+        margin: 0rem 0rem;
+    }
+        .app__aboutus-content_knife img
+    {
+        position: absolute;
+        top: 5%;
+        height: 700px;
+    }
+
+
+    .aboutUS-overLay img{
+        width: 355px;
+        height: 395px;
+        z-index: 0;
+    }
+        /* About history */
+        .aboutUS-context_about{
+            margin-right: 20px;
+        }
+        .aboutUs_context__history {
+            margin-top: 250px;
+            margin-right: 350px;
+        }
+        /* /* About history */ 
+    
+}
+
+@media screen and (max-width: 578px) {
+
+           /* About history */
+           .aboutUS-context_about{
+            margin-right: 20px;
+        }
+        .aboutUs_context__history {
+            margin-top: 250px;
+            margin-right: 100px;
+            margin-left: 10px;
+        }
+        /* /* About history */ 
+
+        .app__aboutus-content_knife
+        {
+            margin: -1rem 2rem;
+        }
+            .app__aboutus-content_knife img
+        {
+            height: 550px;
+        }
+}

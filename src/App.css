@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Navbar menu */
+.p__text_navbar {
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p__text_navbar:hover {
+  color: #DCCA87;
+  transition: 0.5s ease-in-out;
+}
+.p__text_navbar a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.p__text_navbar a:hover{
+  color: #DCCA87;
+  transition: 0.5s ease-in-out;
+}
+/* /Navbar Menu */
+
+
+/* Home Page */
+
+.p__title_home {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #DCCA87;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p__title {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.global_btn {
+  padding: 0.8rem 1.5rem;
+  color: black;
+  font-size: 0.9rem;
+  background: #DCCA87;
+  font-weight: 700;
+  letter-spacing: 0.004em;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #DCCA87;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* /Home Page */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* About page bg */
+.about_bg {
+    background: url('./assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: 0;
 }
+/* About page bg */

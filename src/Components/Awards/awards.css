@@ -1,0 +1,86 @@
+.awards_section {
+    padding: 6rem 0;
+}
+
+.awards__secondContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.awards_chef_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.awards_chef_content_quote {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    margin-top: 5rem;
+}
+.awards_chef_content_quote img {
+    width: 40px;
+    height: 30px;
+    margin: 0 1rem 1rem 0;
+}
+
+.awardsPage__main_image img{
+    width: 80%;
+}
+
+.awards_chef__sign {
+    margin-top: 2rem;
+}
+
+.kevinLuo{
+    color: #DCCA87;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.head_text {
+    color: #DCCA87;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.awards_chef__sign img{
+    width: 200px;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .awards__secondContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    
+    }
+    .awardsPage__main_image img{
+        width: 100%;
+    }
+    .head_text {
+        font-size: 4.5rem;
+    }
+    .awards__wrapper_info {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .head_text {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .head_text {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,125 @@
+.nav__navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 1rem 2rem;
+    z-index: 999;
+}
+
+.gericht_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gericht_logo img{
+    width: 150px;
+}
+.nav__navbar__links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__navbar__links li a {
+   margin: 0px 1rem;
+   cursor: pointer;
+   color: aliceblue;
+}
+
+.navbar_login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .navbar_login div{
+    width: 1px;
+    height: 40px;
+    background: #DCCA87;
+  }
+
+.nav__navbar_smallScreen {
+    display: none;
+}
+
+  /* Toggle Menu */
+
+.nav__navbar-small-screen_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #DCCA87;
+    height: 100vh;
+    color: aliceblue;
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.nav__navbar-small-screen_menu .overlay__close {
+    font-size: 27px;
+    color: aliceblue;
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right:  20px;
+}
+
+.nav__navbar__links-menu {
+    list-style: none;
+}
+.nav__navbar__links-menu li{
+    color: aliceblue;
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+.nav__navbar__links-menu li:hover{
+    color: black;
+}
+@media screen and (min-width: 2000px) {
+    .gericht_logo img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .gericht_logo img {
+        width: 210px;
+    }
+
+    .nav__navbar__links {
+        display: none;
+    }
+    .nav__navbar_smallScreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gericht_logo img {
+        width: 150px;
+    }
+    
+   .navbar_login {
+    gap: 10px;
+   }
+}
+
+@media screen and (max-width: 578px) {
+
+   .navbar_login {
+    display: none;
+   }
+}

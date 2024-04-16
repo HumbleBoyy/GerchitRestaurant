@@ -1,0 +1,82 @@
+.subscribe__mini_page {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.subscribe_contents_wrapper {
+    border: 2px solid #DCCA87;
+    width: 100%;
+    height: 250px;
+    padding: 1rem 1rem;
+}
+
+.subscribe__title_big {
+    font-size: 3rem;
+}
+
+.subscribe__title_p {
+    font-size: 0.8rem;
+    color: rgb(185, 185, 185);
+}
+
+.subscribe_input_and_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.subscribe_input_and_button input {
+    width: 55%;
+    height: 40px;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    border: 1px solid #DCCA87;
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+.subscribe_input_and_button button {
+    height: 40px;
+    width: 100px;
+    margin: 0 0.5rem;
+    background: #DCCA87;
+    border: 1px solid #DCCA87;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.subscribe_input_and_button button:hover{
+    border: 1px solid aliceblue;
+    background: transparent;
+    color: aliceblue;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 578px) {
+
+    .subscribe_input_and_button input {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 10px;
+    }
+    .subscribe__title_big {
+        font-size: 1.5rem;
+    }
+    .subscribe_contents_wrapper {
+        width: 100%;
+        height: 200px;
+        padding: 1rem 0.5rem;
+        padding-right: 0rem;
+    }
+
+    .subscribe_input_and_button button {
+        margin: 0 0.3rem;
+        font-size: 0.9rem;
+    }
+}
